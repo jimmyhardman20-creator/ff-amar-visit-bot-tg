@@ -9,7 +9,7 @@ from telegram import Update
 from telegram.constants import ParseMode
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 
-API_BASE = os.getenv("API_BASE", "https://yunus-bhai-visit-ff.onrender.com/bd")
+API_BASE = os.getenv("API_BASE", "https://yunus-bhai-visit-kore-ff-phi.vercel.app/bd")
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 if not BOT_TOKEN:
@@ -19,7 +19,7 @@ HELP_TEXT = (
     "👋 Assalamu Alaikum!\n\n"
     "Use: /visit <uid> (Free Fire ID)\n"
     "Example: /visit 654754678\n\n"
-    "Endpoint: https://yunus-bhai-visit-ff.onrender.com/bd/<uid>"
+    "Endpoint: https://yunus-bhai-visit-kore-ff-phi.vercel.app/bd/<uid>"
 )
 
 UID_RE = re.compile(r"^\d{5,15}$")
